@@ -5,9 +5,9 @@ A repository for web design and development reference materials.
 
 [Deploying Icon Fonts](http://donirby.info/deploy)
 
-[Chunky Mobile Web Fonts](http://donirby.net/chunky)
+[Chunky Mobile Web Fonts](http://donirby.info/chunky)
 
-[Up & Running with Typekit](http://doonirby.info/typekit)
+[Up & Running with Typekit](http://donirby.info/typekit)
 
 [Github for Web Design](http://donirby.net/info/github)
 
