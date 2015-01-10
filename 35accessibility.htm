@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Improving accessibility</title>
+<link href="_css/fonts.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base35.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.icon {
+	font-family: chunky_mobile;
+	font-size: 1.4em;
+}
+</style>
+</head>
+<body class="cf">
+<header>
+<a href="index.htm"><span class="icon">&#xE000;</span></a>
+<h1>Improving accessibility</h1>
+</header>
+<article>
+<h2>Making icons more accessible</h2>
+<p>Using icon fonts can cause problems with accessibility. In some cases the injection of additional content on the page can cause screen readers to read icon content that make no sense to the user. In other cases you might display an icon by itself with no accessible text, essentially hiding it from some users. To control the accessibility of icons we can use the <strong>aria-hidden</strong> attribute to hide generated content from screen readers.  Because this property hides all content of an element we can't apply the <strong>data–icon</strong> attribute to parent elements like paragraphs. Instead we have to add a little additional markup to our HTML wherever we want an icon to appear. The CSS property <strong>speak</strong> can also be used to hide content although it's not well supported yet. To ensure a standalone icon has descriptive text we can add text to the content of the icons element and then hide it visually. This text will be read by screen readers but not visible in the layout itself.</p>
+<h3>Example</h3>
+<pre>
+<code>
+span[data-icon]:before {
+	font-family: 'icon font';
+	content: attr(data-icon);
+	speak: none;
+    */ normalize */
+    }
+    -------------------------------
+&lt;span data-icon=&quot;&amp;#xE001;&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+</code>
+</pre>
+<section>
+<h2>Exercise</h2>
+<p>Add the user profile icon (&amp;#xe046;) to the paragraph below. Hide the icon's generated content from screen readers. Below that, create a stand-alone icon for user profiles that includes descriptive text for screen readers.</p>
+<p><span data-icon="&#xe046;" aria-hidden="true"></span> User Profile</p>
+<p><span data-icon="&#xe046;" aria-hidden="true"></span> <span class="alt-text">User Profile</span></p>
+</section>
+</article>
+</body>
+</html>

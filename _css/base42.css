@@ -1,0 +1,43 @@
+/* icon font  styles */
+span[data-icon]:before {
+	font-family: chunky_mobile;
+	content: attr(data-icon);
+	speak: none;
+	font-weight: 400;
+	font-style: normal;
+	font-variant:normal;
+	text-transform:none;
+	font-size:1.2em; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: yellow;
+	line-height:1;
+}
+span.base:before {
+	vertical-align:baseline;
+}
+span.middle:before {
+	vertical-align:middle;
+}
+span.top:before {
+	vertical-align:top;
+}
+span.text-top:before {
+	vertical-align:text-top;
+}
+span.bottom:before {
+	vertical-align:bottom;
+}
+span.text-bottom:before {
+	vertical-align:text-bottom;
+}
+span.percent:before {
+	vertical-align:5%;
+}
+span.other:before {
+	display: inline-block;
+	position: relative;
+	top: -0.05em;
+}
+
+

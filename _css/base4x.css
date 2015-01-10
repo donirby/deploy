@@ -1,0 +1,128 @@
+/*basic styles*/
+html, body {
+	margin: 0;
+}
+html {
+	background: #ccc;
+}
+body {
+	font: 100% Lato, Helvetica, sans-serif;
+	background: white;
+	width: 80%;
+	margin: 0 auto;
+	padding: 2%;
+	line-height: 1.6;
+}
+article, aside, section, nav, figure, header, footer {
+	display: block;
+}
+section {
+	font-size: 120%;
+}
+h1, h2, h3 {
+	font-size: 2.4em;
+	font-weight: normal;
+	font-family: LatoLight, Helvetica, sans-serif;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	color: #575451;
+	margin: 0;
+	line-height: 1;
+}
+h1 {
+	font-family: LatoBlack, Arial Black, sans-serif;
+	font-size: 3.6em;
+	text-align: center;
+	margin: 0.5em 0 1em;
+}
+h2 {
+	font-size: 2em;
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+h3 {
+	font-family: LatoBlack, Helvetica, sans-serif;
+	font-size: 1.6em;
+	font-weight: bold;
+	margin: 1em 0;
+}
+h4 {
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+p {
+	font-size: 1.2em;
+	margin: 0 0 1em;
+}
+a {
+	color: #77A0B8;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+pre {
+	background: black;
+	padding: 1em 2em;
+	color: #F2EFB5;
+	font-size: 1.4em;
+	white-space: pre-wrap; 
+ 	white-space: -moz-pre-wrap;  
+	white-space: -pre-wrap;      
+	white-space: -o-pre-wrap;  
+	word-wrap: break-word;
+}
+ul {
+	margin-bottom: 64px;
+}
+section h2 {
+	border-bottom:1px solid #666;
+	margin-bottom:1em;
+}
+.italics {
+	font-style: italic;
+}
+.example {
+	width: 50%;
+	margin: 1em auto;
+}
+/*Global classes*/
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+.cr {
+	clear: right;
+}
+.cl {
+	clear: left;
+}
+.cb {
+	clear: both;
+}
+section p {
+	font-size:1.4em;
+	background:#CDF5FB;
+	line-height:2;
+}
+ul.menu {
+	list-style:none;
+	background: #3C3C3C;
+	margin:0;
+	padding:0.5em 2em;
+}
+
+ul.menu li {
+	display:inline-block;
+	margin:0;
+	padding:0;
+}

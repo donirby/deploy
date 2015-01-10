@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vertically aligning text</title>
+<link href="_css/fonts.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base42.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.icon {
+	font-family: chunky_mobile;
+	font-size: 1.4em;
+}
+</style>
+</head>
+<body class="cf">
+<header>
+<a href="index.htm"><span class="icon">&#xE000;</span></a>
+<h1>Vertically aligning text</h1>
+</header>
+<article>
+<h2>Aligning text and icons</h2>
+<p>When icon fonts are created each icon is drawn inside of a glyph’s Em box. This box controls the width and height of letterforms as well as where the character sits on the font’s baseline. This means that for icon fonts how the designer positions and sizes icons within its Em box has a direct effect on how the icon will align with text. In some cases proper alignment won't require any adjustment at all, while in others you may need to modify font size, vertical margins, or vertical alignment to get the proper relationship between icon and text. It's worth noting as well that you should expect variations within each icon font, so rarely will a global alignment class work for the entire icon font.</p>
+<section>
+<h2>Example</h2>
+<p><span data-icon="&#xe021;" aria-hidden="true" class="base"></span>Vertical align: baseline</p>
+<p><span data-icon="&#xe021;" aria-hidden="true" class="middle"></span>Vertical align: middle</p>
+<p><span data-icon="&#xe021;" aria-hidden="true" class="top"></span>Vertical align: top</p>
+<p><span data-icon="&#xe021;" aria-hidden="true" class="text-top"></span>Vertical align: text-top</p>
+<p><span data-icon="&#xe021;" aria-hidden="true" class="bottom"></span>Vertical align: bottom</p>
+<p><span data-icon="&#xe021;" aria-hidden="true" class="text-bottom"></span>Vertical align: text-bottom</p>
+<p><span data-icon="&#xe021;" aria-hidden="true" class="percent"></span>Vertical align: percentage value</p>
+<p><span data-icon="&#xe021;" aria-hidden="true" class="other"></span>Vertical align: box properties</p>
+</section>
+</article>
+</body>
+</html>

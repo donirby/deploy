@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Changing icon states</title>
+<link href="_css/fonts.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base43.css" rel="stylesheet" type="text/css" media="screen">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<style>
+.icon {
+	font-family: chunky_mobile;
+	font-size: 1.4em;
+}
+</style>
+</head>
+<body class="cf">
+<header>
+<a href="index.htm"><span class="icon">&#xE000;</span></a>
+<h1>Changing icon states</h1>
+</header>
+<article>
+<h2>Utilizing UI icon fonts.</h2>
+<p>Many icon fonts contain sets of UI icons that indicate various states. This could include things like battery levels, signal strength, or volume indication.  There are many ways that you can indicate the changes in the state of an icon. You could use the <strong>:hover</strong> pseudo-class to change icons based on user interaction. A more robust way of displaying icon states is to tie the icon to the scripting of interactive elements. Doing this requires you to re-examine your deployment strategy for icon fonts, as many UI–widgets have built-in constraints on styling and functionality. Just be sure that any approach to displaying interactive states of icons doesn't interfere with any of your existing deployment strategies.</p>
+<section>
+  <h2>Changing states</h2>
+  <div id="sliderUI">
+  <div id="slider"></div><span aria-hidden="true" id="icon" class="vol1"></span>
+  </div>
+</section>
+</article>
+<script>
+$(function () {
+    var classes = {
+        0: 'vol1',
+        25: 'vol2',
+        50: 'vol3',
+		75: 'vol4'
+    }
+    $("#slider").slider({
+        animate: "fast",
+        value: 0,
+        min: 0,
+        max: 75,
+        step: 25,
+        slide: function (event, ui) {
+            $("#icon").removeClass().addClass(classes[ui.value]);
+        }
+    });
+});
+</script>
+</body>
+</html>

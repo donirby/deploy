@@ -1,0 +1,23 @@
+/* icon font styles */
+span[data-icon]:before {
+	font-family: chunky_mobile;
+	content: attr(data-icon);
+	font-weight: 400;
+	font-style: normal;
+	text-transform: none;
+	font-variant: normal;
+	letter-spacing: normal;
+	line-height: 1;
+	display: inline-block;
+	font-size:3em;
+	margin-right:0.5em;
+}
+.none {
+	
+}
+.anti {
+	
+}
+.sub {
+	
+}

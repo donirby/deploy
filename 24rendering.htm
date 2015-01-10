@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Improving icon rendering</title>
+<link href="_css/fonts.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base24.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.icon {
+	font-family: chunky_mobile;
+	font-size: 1.4em;
+	border:none;
+}
+</style>
+</head>
+<body class="cf">
+<header>
+<a href="index.htm"><span class="icon">&#xE000;</span></a>
+<h1>Improving rendering</h1>
+</header>
+<article>
+<h2>Controlling antialising in browsers</h2>
+<p>In some browsers icons can look blurry or even pixelated. Sometimes this is caused by the icon being displayed at a size it's not a multiple of the grid it was designed for. This can cause smaller lines or spaces to close up or blur. A more common cause for rendering issues is the default anti-aliasing settings of browsers. WebKit browsers give you the ability to control anti-aliasing by turning antialiasing off, something what is known as grayscale rendering, or enabling subpixel rendering for better rendering on high-resolution displays. This tends to work well for text but for icon fonts subpixel rendering tends to blur your carefully crafted edges and harms the resolution of the icons. By using the <b>-webkit-font-smoothing-</b> and <b>-moz-osx-font-smoothing</b> properties you can take control over how your icons are rendered.</p>
+<section>
+<h2>Control my rendering!</h2>
+<p class="example"><span data-icon="&#xE041;" class="none"></span><span data-icon="&#xE041;" class="anti"></span><span data-icon="&#xE041;" class="sub"></span></p>
+<p class="example"><span data-icon="&#xE009;" class="none"></span><span data-icon="&#xE009;" class="anti"></span><span data-icon="&#xE009;" class="sub"></span></p>
+<p class="example"><span data-icon="&#xF010;" class="none"></span><span data-icon="&#xF010;" class="anti"></span><span data-icon="&#xF010;" class="sub"></span></p>
+</section>
+</article>
+</body>
+</html>

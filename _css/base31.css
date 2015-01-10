@@ -1,0 +1,15 @@
+/* icon font  styles */
+.icon {
+	font-family: chunky_latin;
+	font-weight: 400;
+	font-style: normal;
+	text-transform:none;
+	font-variant: normal;
+	letter-spacing:normal;
+	line-height:1; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 64px;
+	display:block;
+	line-height: 64px;
+}

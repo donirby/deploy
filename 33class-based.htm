@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Class-based solutions</title>
+<link href="_css/fonts.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base33.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.icon {
+	font-family: chunky_mobile;
+	font-size: 1.4em;
+}
+</style>
+</head>
+<body class="cf">
+<header>
+<a href="index.htm"><span class="icon">&#xE000;</span></a>
+<h1>Class-based solutions</h1>
+</header>
+<article>
+<h2>Creating efficient icon font class styles</h2>
+<p>Creating class-based icon font deployment can be tedious. Each icon will need an individual class assignment in order to display properly. This can also result in needless repetition of code through visual styling appearing in each declaration. The upside is that you can use class names that are meaningful rather than the encoding values, which makes it easier to remember which class to apply for each icon.
+
+You can make this process more efficient through the use of attribute selectors. These selectors allow you to write class definitions that chain together with prefixes and suffixes to apply icons. Parent classes can assign <strong>font-family</strong> declarations and normalize styling, while individual suffixes can assign specific icons. You can take this even further by adding specific visual styling suffixes as well.</p>
+<h3>Example</h3>
+<pre>
+<code>
+*[class*="icon"]:before {
+	font-family: 'icon font';
+    */ normalize */
+    }
+*[class*="-search"]:before {
+	content: '\e001';
+    }
+*[class*="-big"]:before {
+	font-size: 2em;
+    }
+    -------------------------------
+&lt;span class=&quot;icon-search&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon-search-big&quot;&gt;&lt;/span&gt;
+</code>
+</pre>
+<section>
+<h2>Exercise</h2>
+<p>Display the search and maps icon on one row and the search icon at the "big" size on another row.</p>
+<p><span class="icon-search"></span><span class="icon-maps"></span></p>
+<p><span class="icon-search-big"></span></p>
+</section>
+</article>
+</body>
+</html>

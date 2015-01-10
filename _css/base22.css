@@ -1,0 +1,65 @@
+/* Font specimen styles */
+ul.specimen {
+	list-style: none;
+}
+ul.specimen li {
+	display: block;
+	float: left;
+	border: 1px solid #666;
+	width: 130px;
+	padding: 5px 20px;
+	text-align: center;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+li strong {
+	display: block;
+}
+span[data-icon]:before {
+	font-family: chunky_mobile;
+	content: attr(data-icon);
+	speak: none;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 64px;
+	display:block;
+	line-height: 64px; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+span.multi {
+	position: relative;
+	display:block;
+	width:64px;
+	margin: 0 auto;
+}
+span.multi span {
+	position: absolute;
+	top:0;
+	left:0;
+}
+/* multi color colors */
+.maps {
+	color: #7D7893;
+}
+.maps span {
+	color: #7B3123;
+}
+.full span {
+	color: green;
+}
+.seventyfive span {
+	color: #89C423;
+}
+.half span {
+	color: #DBB219;
+}
+.quarter span {
+	color: red;
+}
+.cloud {
+	color: #A5D2DB;
+}
+.cloud span {
+	color: black;
+}

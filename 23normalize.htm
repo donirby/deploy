@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>normalize your icon fonts</title>
+<link href="_css/fonts.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base23.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.icon {
+	font-family: chunky_mobile;
+	font-size: 1.4em;
+	border:none;
+}
+</style>
+</head>
+<body class="cf">
+<header>
+<a href="index.htm"><span class="icon">&#xE000;</span></a>
+<h1>Normalizing icon fonts</h1>
+</header>
+<article>
+<h2>Ensure that your icon fonts look consistent</h2>
+<p> When using icon fonts it’s tempting to simply set the font family declaration to display your icon font and ignore the element’s overall font properties. It's important to remember that icon fonts are still fonts and properties like font-weight font-style, text-transform, and others can have a negative effect on how the icons display. Because of this it's a good idea to normalize those properties through either a single dedicated selector or each time you assign the icon’s font-family.</p>
+<section>
+<h2>Normalize me!</h2>
+<h3>Attachment icon: <span data-icon="&#xE008;"></span></h3>
+<p class="italics">Now let's have it appear inside an italicized paragraph: <span data-icon="&#xE008;"></span></p>
+<h4>Stand alone, inside a div</h4>
+<div><span data-icon="&#xE008;" class="single"></span></div>
+</section>
+</article>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* icon font  styles */
+span[data-icon]:before {
+	font-family: chunky_mobile;
+	content: attr(data-icon);
+	speak: none;
+	font-weight: 400;
+	font-style: normal;
+	font-variant: normal;
+	text-transform:none;
+	line-height: 1; 
+	display:inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 64px;
+    }
+
+.alt-text {
+	position:absolute;
+	left: -9999em;
+}
+

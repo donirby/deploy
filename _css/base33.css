@@ -1,0 +1,25 @@
+/* icon font  styles */
+*[class*="icon"]:before {
+	font-family: chunky_mobile;
+	font-weight: 400;
+	font-style: normal;
+	font-variant: normal;
+	text-transform:none;
+	line-height: 1; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 32px;
+    }
+*[class*="-bigred"]:before {
+	font-size: 3em;
+	color: red;
+    }
+*[class*="-big"]:before {
+	font-size: 3em;
+    }
+*[class*="-search"]:before {
+	content: '\e001';
+    }
+*[class*="-maps"]:before {
+	content: '\e006';
+    }

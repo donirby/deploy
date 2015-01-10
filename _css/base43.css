@@ -1,0 +1,59 @@
+/* icon font  styles */
+span[data-icon]:before {
+	font-family: chunky_mobile;
+	content: attr(data-icon);
+	speak: none;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 64px;
+	display:block;
+	line-height: 64px; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/*normalize class-based icons*/
+span[aria-hidden]:before {
+	font-family: chunky_mobile;
+	speak: none;
+	font-weight: 400;
+	font-style: normal; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+/*slider styles*/
+#sliderUI {
+	margin-top:2em;
+}
+#slider {
+	width: 200px;
+	margin-right: 0.7em;
+	display: inline-block;
+}
+span.vol1:before {
+	content: "\e069";
+	font-size:32px;
+	line-height:1;
+	display: inline-block;
+	color: #888;
+}
+span.vol2:before {
+	content: "\e068";
+	font-size:32px;
+	line-height:1;
+	display: inline-block;
+	color: #A06465;
+}
+span.vol3:before {
+	content: "\e067";
+	font-size:32px;
+	line-height:1;
+	display: inline-block;
+	color: #CF4649;
+}
+span.vol4:before {
+	content: "\e066";
+	font-size:32px;
+	line-height:1;
+	display: inline-block;
+	color:#FF0004;
+}

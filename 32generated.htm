@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using generated content</title>
+<link href="_css/fonts.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base32.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.icon {
+	font-family: chunky_mobile;
+	font-size: 1.4em;
+}
+</style>
+</head>
+<body class="cf">
+<header>
+<a href="index.htm"><span class="icon">&#xE000;</span></a>
+<h1>Using generated content</h1>
+</header>
+<article>
+<h2>A better way to display icons</h2>
+<p>To avoid having characters or html entities directly in your HTML, you can use generated content to display icons. The <strong>::before</strong> and <strong>::after</strong> pseudo-selectors allow us to insert content before or after the content of an element. By choosing icon fonts as the content to display we keep our markup free of extraneous code and we start down the path of making our icons more friendly to accessibility devices.</p>
+<h3>Here's how it works.</h3>
+<pre>
+<code>
+.icon:before {
+	font-family: 'my icon font';
+	content: "\e000";
+	font-size: 1em;
+}
+</code>
+</pre>
+<section>
+<h2>Let's use generated content</h2>
+<p class="icon">Display the camera icon, it's unicode value is '\e007.'</p>
+</section>
+</article>
+</body>
+</html>

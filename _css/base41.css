@@ -1,0 +1,25 @@
+/* icon font  styles */
+span[data-icon]:before {
+	font-family: chunky_mobile;
+	content: attr(data-icon);
+	speak: none;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 32px;
+	color: #DC8C1D;
+	display:inline-block;
+	margin-right:1.2em;
+	line-height: 1;
+	text-shadow: 1px 1px 0px #000; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.alt-text {
+	position:absolute;
+	left:-9999em;
+}
+
+span.inactive:before {
+	color: #888;
+}

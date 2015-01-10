@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using the data-icon attribute</title>
+<link href="_css/fonts.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base34.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.icon {
+	font-family: chunky_mobile;
+	font-size: 1.4em;
+}
+</style>
+</head>
+<body class="cf">
+<header>
+<a href="index.htm"><span class="icon">&#xE000;</span></a>
+<h1>Using data-icon</h1>
+</header>
+<article>
+<h2>Displaying icons through the data-icon attribute</h2>
+<p>Class-based approaches to deploying icon fonts allow us to build sophisticated systems that control the display and styling of icons. They are inefficient however, in that you are required to create an individual class for each icon. A more efficient way to display icons is to use the <strong>data-icon</strong> attribute. Starting with HTML 5 we've been able to add custom <strong>data</strong> attributes to any element. This allows authors to store private data inside any attribute, unseen by the user but accessible to styles and scripts.</p>
+<p>By applying a <strong>data-icon</strong> attribute to an element we can store the character encoding for individual icons wherever we want to display them. We can then retrieve this encoding by using the attribute function inside generated content. This allows us to write much more efficient code, as we can now display every icon and control its basic styling through the use of a single selector.</p>
+<h3>Example</h3>
+<pre>
+<code>
+*[data-icon]:before {
+	font-family: 'icon font';
+	content: attr(data-icon);
+    */ normalize */
+    }
+    -------------------------------
+&lt;span data-icon=&quot;&amp;#xE001;&quot;&gt;&lt;/span&gt;
+</code>
+</pre>
+<section>
+<h2>Exercise</h2>
+<p>Write a single selector to control the display of icons. In the span tag provided add a data-icon attribute and pass in several encoding values to display different icons.</p>
+<p><span data-icon="&#xe086;"></span></p>
+</section>
+</article>
+</body>
+</html>

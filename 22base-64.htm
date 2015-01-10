@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Base64 encoding</title>
+<link href="_css/fonts22.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base22.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.icon {
+	font-family: chunky_latin;
+	font-size: 1.4em;
+	border:none;
+}
+</style>
+</head>
+<body class="cf">
+<header>
+<a href="index.htm"><span class="icon">h</span></a>
+<h1>Data URI &amp; Icon Fonts</h1>
+</header>
+<article>
+<h2>Why Base64 encoding for icon fonts is a good idea.</h2>
+<p>Some browsers, like certain versions of Firefox, have cross-domain policy issues that can keep icon fonts from working. <a href="https://www.ietf.org/rfc/rfc2397.txt" title="Data URI">Data URI </a>is a standard that allows us to Base64 encode file like images and fonts and include them inline in your styles and html. By adding Base64 encoded versions of your fonts to your <b>@font-face</b> declarations you can avoid those cross-domain issues and provide a local fallback for your web fonts.</p>
+<p>Most online font generators like <a href="http://www.fontsquirrel.com/tools/webfont-generator" title="Font Squirrel">Font Squirrel</a> have a Base64 option that you can choose when generating web fonts. If you are creating your own you could use one of the many online services that provide base 64 encoding. I'm partial to the  encoder found at <a href="http://www.mobilefish.com/services/base64/base64.php" title="Mobilefish">Mobilefish</a> as it does a nice job of encoding fonts.</p>
+<section>
+<h2>Use Data URI to display the home icon</h2>
+<p>Display the home icon: <span class="icon">h</span></p>
+</section>
+</article>
+</body>
+</html>

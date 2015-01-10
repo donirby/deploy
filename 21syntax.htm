@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exploring syntax</title>
+<link href="_css/fonts.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
+<link href="_css/base21.css" rel="stylesheet" type="text/css" media="screen">
+<style>
+.icon {
+	font-family: chunky_mobile;
+	font-size: 1.4em;
+	border:none;
+}
+</style>
+</head>
+<body class="cf">
+<header>
+<a href="index.htm"><span class="icon">&#xE000;</span></a>
+<h1>@font-face syntax</h1>
+</header>
+<article>
+<h2>How @font-face works</h2>
+<p>By using the @font-face rule we can enable the use of web fonts in our sites. Since icon fonts are just another web font, it's important that you understand how web fonts work before deploying icon fonts in your projects.</p>
+<p>Although the syntax has evolved over the years, here’s the currently accepted standard for @font-face syntax. Please be aware that there are multiple variations on this syntax.</p>
+<pre><code>@font-face {
+    font-family: 'font name';
+ 	src: url('font.eot');
+    src: url('font.eot?#iefix') format('embedded-opentype'),
+         url('font.woff') format('woff'),
+         url('font.ttf') format('truetype'),
+         url('font.svg#chunky_mobile') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}</code></pre>
+<p>‘Font name’ would be the name you use when defining the <b>font-family</b> property, and the multiple <b>src</b> attributes (and values) deal with the tricky nature of browser support for multiple font formats. Font-weight and font-style are used to define the base weight and style of the font.</p>
+<section><h2>Let's try it!</h2></section>
+<p>Display the home icon: <span class="icon">&#xE000;</span></p>
+</article>
+</body>
+</html>
