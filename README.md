@@ -7,7 +7,7 @@ A repository for web design and development reference materials.
 
 [Chunky Mobile Web Fonts](http://donirby.net/chunky)
 
-[Up & Running with Typekit](http://doonirby.net/typekit)
+[Up & Running with Typekit](http://doonirby.info/typekit)
 
 [Github for Web Design](http://donirby.net/info/github)
 
